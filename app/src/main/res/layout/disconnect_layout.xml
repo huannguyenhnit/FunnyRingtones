@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/margin_big"
+    android:paddingRight="@dimen/margin_big">
+
+    <TextView
+        android:id="@+id/disconnect_messenger_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/disconnect_messenger" />
+
+    <Button
+        android:id="@+id/disconnect_retry_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/disconnect_messenger_tv"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/retry_string"
+        android:textAllCaps="false" />
+</RelativeLayout>

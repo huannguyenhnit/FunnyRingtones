@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Nhạc chuông hài hước</string>
+    <string name="disconnect_messenger">Không kết nối internet. Đảm bảo rằng dữ liệu WiFi hoặc dữ liệu di động đã được bật, sau đó thử lại!</string>
+    <string name="retry_string">Thử lại</string>
+    <string name="permission_error">Vui lòng chấp nhận quyền truy cập!</string>
+    <string name="not_choose_setting">Vui lòng tùy chọn cài đặt!</string>
+    <string name="download_progress_title">Vui lòng đợi...</string>
+    <string name="download_progress_content">Đang tải xuống...</string>
+    <string name="download_error_title">Tải xuông thất bại!</string>
+    <string name="change_setting_success">Cài đặt thành công!</string>
+    <string name="change_setting_error">Cài đặt thất bại!</string>
+    <string name="server_maintenance">Hệ thống đang bảo trì!</string>
+
+</resources>

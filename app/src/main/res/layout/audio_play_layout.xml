@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/audio_play_background"
+    android:clickable="true"
+    android:padding="@dimen/margin_minimum">
+
+    <RelativeLayout
+        android:id="@+id/ringtone_play_info_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_minimum">
+
+        <TextView
+            android:id="@+id/ringtone_play_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/ringtone_play_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_minimum"
+            android:layout_toLeftOf="@id/ringtone_play_time_tv" />
+
+
+        <RelativeLayout
+            android:id="@+id/ringtone_play_pause_relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ringtone_play_progress"
+            android:layout_below="@+id/ringtone_play_progress"
+            android:layout_marginRight="@dimen/margin_minimum"
+            android:layout_marginTop="@dimen/margin_minimum"
+            android:clickable="true">
+
+            <ProgressBar
+                android:id="@+id/ringtone_loading_progress"
+                android:layout_width="@dimen/image_icon_size"
+                android:layout_height="@dimen/image_icon_size"
+                android:layout_centerInParent="true" />
+
+            <ImageView
+                android:id="@+id/ringtone_play_pause_img"
+                android:layout_width="@dimen/image_icon_size"
+                android:layout_height="@dimen/image_icon_size"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ringtone_play_name_file_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ringtone_play_progress"
+            android:layout_marginTop="@dimen/margin_minimum"
+            android:layout_toLeftOf="@+id/ringtone_play_icon_download_img"
+            android:layout_toRightOf="@id/ringtone_play_pause_relative"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/ringtone_play_icon_download_img"
+            android:layout_width="@dimen/image_icon_size"
+            android:layout_height="@dimen/image_icon_size"
+            android:layout_alignRight="@+id/ringtone_play_time_tv"
+            android:layout_below="@+id/ringtone_play_progress"
+            android:layout_marginLeft="@dimen/margin_minimum"
+            android:layout_marginTop="@dimen/margin_minimum"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_download" />
+
+        <TextView
+            android:id="@+id/ringtone_play_name_type_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ringtone_play_name_file_tv"
+            android:layout_toLeftOf="@+id/ringtone_play_icon_download_img"
+            android:layout_toRightOf="@id/ringtone_play_pause_relative"
+            android:textSize="@dimen/text_size_small" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ringtone_controller_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ringtone_play_info_relative"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_phone_ring" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/ringtone_phone_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_messenger" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/ringtone_notification_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_clock" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/ringtone_alarm_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/ringtone_ok_btn"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ok_string" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

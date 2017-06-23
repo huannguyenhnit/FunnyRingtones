@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Funny Ringtones</string>
+    <string name="disconnect_messenger">No internet connect. Make sure WiFi or cellular data is turned on, then try again!</string>
+    <string name="retry_string">Retry</string>
+    <string name="permission_error">Please accept access permission!</string>
+    <string name="not_choose_setting">Please choose settings!</string>
+    <string name="download_progress_title">Please wait...</string>
+    <string name="download_progress_content">Downloading file...</string>
+    <string name="download_error_title">Download error!</string>
+    <string name="change_setting_success">Setting successful!</string>
+    <string name="change_setting_error">Setting error!</string>
+    <string name="server_maintenance">Server maintenance!</string>
+    <string name="ok_string">OK</string>
+    <string name="ads_unit_banner">ca-app-pub-6876931074628608/4374463170</string>
+    <string name="ads_unit_interstitial">ca-app-pub-6876931074628608/8804662771</string>
+
+</resources>

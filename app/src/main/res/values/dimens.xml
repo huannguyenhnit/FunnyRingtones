@@ -1,0 +1,12 @@
+<resources>
+
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="view_line_height">1dp</dimen>
+    <dimen name="dp_0">0dp</dimen>
+    <dimen name="collapsing_toolbar_height">160dp</dimen>
+    <dimen name="margin_big">16dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_minimum">4dp</dimen>
+    <dimen name="image_icon_size">32dp</dimen>
+
+</resources>
